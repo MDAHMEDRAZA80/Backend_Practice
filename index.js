@@ -7,7 +7,7 @@ const port = 3500;
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
-// const DB = "mongodb+srv://ahmed:ahmed123@cluster0.cmzqp4h.mongodb.net/?retryWrites=true&w=majority";
+
 
 mongoose.connect(
   process.env.MONGO_URI,
