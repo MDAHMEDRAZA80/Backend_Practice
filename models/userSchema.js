@@ -3,6 +3,7 @@ const sequencingProperty = require("../config/sequencingProperty");
 const validator = require("validator");
 
 const userSchema = new mongoose.Schema({
+  
   // BASIC INFO
   //-----------------------------------------------
   _id: Number,
@@ -38,6 +39,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  
   //PROPERTY DETAILS
   //-----------------------------------
   length: {
