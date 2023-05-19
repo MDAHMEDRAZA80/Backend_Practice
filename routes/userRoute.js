@@ -3,6 +3,8 @@ const userModal = require("../models/userSchema");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
 const signupModal = require("../models/signupSchema");
+require("dotenv").config()
+const SC_KEY=process.env.SC_KEY;
 
 router.post("/addproperty", async (req, res) => {
   try {
@@ -22,7 +24,7 @@ router.get("/property", async (req, res) => {
   // console.log("get route of property")
   try {
     const token = req.headers.authorization;
-    const verifyToken = jwt.verify(token, process.env.SC_KEY);
+    const verifyToken = jwt.verify(token,SC_KEY);
     console.log(verifyToken);
     if (verifyToken) {
       console.log(verifyToken);
