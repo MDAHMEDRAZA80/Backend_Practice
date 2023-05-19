@@ -10,7 +10,7 @@ require("dotenv").config();
 // const DB = "mongodb+srv://ahmed:ahmed123@cluster0.cmzqp4h.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(
-  process.env.MongoUrl,
+  process.env.MONGO_URI,
   () => {
     console.log("Successfully connected to database!");
   },
