@@ -28,7 +28,7 @@ app.listen(port, (err) => {
   if (err) {
     console.log(err);
   } else {
-    console.log("Listening to server at port 3500");
+    console.log(`Server listening on ${port}`);
   }
 });
 
