@@ -20,12 +20,12 @@ const signupSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    min: 6,
+    min: 5,
   },
   cpassword: {
     type: String,
     required: true,
-    min: 6,
+    min: 5,
   },
 });
 
